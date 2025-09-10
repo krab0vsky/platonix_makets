@@ -144,7 +144,6 @@ body {
   opacity: 0.9;
 }
 
-/* Палитры (градиенты) */
 body.palette-p1 {
   background: linear-gradient(135deg,#7A1E33 0%,#D7485C 50%,#F8C0C8 100%);
   color: #fff;
@@ -170,7 +169,6 @@ body.palette-p5 {
   color: #fff;
 }
 
-/* Немного адаптивности */
 @media (max-width:800px) {
   .layout-split {
     flex-direction: column;
