@@ -1,0 +1,182 @@
+:root {
+  --gap: 16px;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin: 0;
+  color: #fff;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.05));
+}
+
+.nav a {
+  color: inherit;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container {
+  padding: 24px;
+}
+
+.hero {
+  min-height: 60vh;
+  padding: 28px;
+  border-radius: 16px;
+  margin: 12px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 14px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.btn {
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  cursor: pointer;
+}
+
+.layout-split {
+  display: flex;
+  gap: 16px;
+}
+
+.sidebar {
+  width: 220px;
+  background: rgba(0,0,0,0.06);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.list {
+  padding-left: 16px;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.demo-form input,
+.demo-form textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.media {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.media-img {
+  width: 180px;
+  height: 120px;
+  background: rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.media-body {
+  max-width: 640px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+}
+
+.stat {
+  background: rgba(255,255,255,0.06);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.label {
+  opacity: 0.85;
+}
+
+.site-footer {
+  padding: 12px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Палитры (градиенты) */
+body.palette-p1 {
+  background: linear-gradient(135deg,#7A1E33 0%,#D7485C 50%,#F8C0C8 100%);
+  color: #fff;
+}
+
+body.palette-p2 {
+  background: linear-gradient(135deg,#9A6FB0 0%,#4B2C5E 60%,#0F0F3E 100%);
+  color: #fff;
+}
+
+body.palette-p3 {
+  background: linear-gradient(135deg,#9263A5 0%,#7D9FCF 60%,#C4E7F2 100%);
+  color: #ffffff;
+}
+
+body.palette-p4 {
+  background: linear-gradient(135deg,#FFE4B5 0%,#C28840 60%,#5A3F37 100%);
+  color: #ffffff;
+}
+
+body.palette-p5 {
+  background: linear-gradient(135deg,#B6D3C1 0%,#3C5F56 60%,#0F1E1A 100%);
+  color: #fff;
+}
+
+/* Немного адаптивности */
+@media (max-width:800px) {
+  .layout-split {
+    flex-direction: column;
+  }
+  .nav {
+    display: none;
+  }
+}
+
