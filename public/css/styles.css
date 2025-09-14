@@ -20,7 +20,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  flex: 1; /* растягиваем на всю доступную высоту */
+  flex: 1;
 }
 
 h1, h2, h3, h4{
@@ -30,7 +30,7 @@ h1, h2, h3, h4{
 /* === Шапка === */
 .site-header {
   display: flex;
-  justify-content: center; /* центрируем меню */
+  justify-content: center;
   align-items: center;
   padding: 16px;
   background: rgba(0,0,0,0.25);
@@ -127,7 +127,6 @@ h1, h2, h3, h4{
   opacity: 0.9;
 }
 
-
 /* === Формы === */
 .demo-form {
   display: flex;
@@ -151,7 +150,6 @@ h1, h2, h3, h4{
 .demo-form textarea::placeholder {
   color: rgba(255,255,255,0.7);
 }
-
 
 /* === Табы === */
 .tabs {
@@ -189,8 +187,17 @@ h1, h2, h3, h4{
   min-width: 200px;
 }
 
-/* 1 страница*/
+/* === Медиа-запросы === */
+@media (max-width:800px) {
+  .layout-split {
+    flex-direction: column;
+  }
+  .nav {
+    display: none;
+  }
+}
 
+/* === Страница 1 — карточки === */
 .red-gradient {
   background: linear-gradient(90deg, #ad235d, #bd260c);
   -webkit-background-clip: text;
@@ -201,7 +208,7 @@ h1, h2, h3, h4{
   background: linear-gradient(135deg, rgba(255,80,100,0.3), rgba(255,180,180,0.15));
 }
 
-/* === Оформление заголовков и текста === */
+/* === Заголовки и декоративный текст === */
 .fancy-title {
   font-size: 2.2rem;
   background: linear-gradient(90deg, #8d06b6, #fad0c4);
@@ -218,7 +225,6 @@ h1, h2, h3, h4{
   margin-bottom: 24px;
 }
 
-/* первая буква абзаца — декоративная */
 .dropcap {
   float: left;
   font-size: 2.7rem;
@@ -228,7 +234,6 @@ h1, h2, h3, h4{
   color: #9e38a1;
 }
 
-/* выделенный абзац */
 .highlight {
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 14px;
@@ -237,8 +242,7 @@ h1, h2, h3, h4{
   font-style: italic;
 }
 
-/* 3 страница*/
-
+/* === Страница 3 — форма === */
 .blue-gradient {
   background: linear-gradient(90deg, #36d1dc, #5b86e5);
   -webkit-background-clip: text;
@@ -252,8 +256,7 @@ h1, h2, h3, h4{
   backdrop-filter: blur(8px);
 }
 
-/* 4 страница*/
-
+/* === Страница 4 — аналитика === */
 .gold-gradient {
   background: linear-gradient(90deg, #f7971e, #ffd200);
   -webkit-background-clip: text;
@@ -276,8 +279,7 @@ h1, h2, h3, h4{
   color: #ffd700;
 }
 
-/* 5 страница*/
-
+/* === Страница 5 — дашборд === */
 .green-gradient {
   background: linear-gradient(90deg, #00c853, #b2ff59);
   -webkit-background-clip: text;
@@ -289,10 +291,9 @@ h1, h2, h3, h4{
   box-shadow: 0 0 10px rgba(0, 180, 90, 0.4);
 }
 
-/* === Палитры (варианты тем) === */
+/* === Палитры === */
 body.palette-p1 { background: linear-gradient(135deg, #4b134f, #c94b4b); }
 body.palette-p2 { background: linear-gradient(135deg, #2B1845, #4B2C5E 70%, #0F0F3E 100%); }
 body.palette-p3 { background: linear-gradient(135deg, #00416A, #E4E5E6); }
 body.palette-p4 { background: linear-gradient(135deg, #F7971E, #FFD200); }
 body.palette-p5 { background: linear-gradient(135deg, #355C24, #A1FFCE); }
-
