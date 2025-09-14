@@ -268,16 +268,6 @@ h1, h2, h3, h4{
   background: rgba(255,255,255,0.08);
 }
 
-.gold-list li {
-  position: relative;
-  padding-left: 20px;
-}
-.gold-list li::before {
-  content: "★";
-  position: absolute;
-  left: 0;
-  color: #ffd700;
-}
 
 /* === Страница 5 — дашборд === */
 .green-gradient {
